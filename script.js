@@ -51,15 +51,18 @@ closeButton.addEventListener('click', e =>{
 });
 
 prevButton.addEventListener('click', e =>{
+    
     if(currentIndex-1<0){
-        return;
+        currentIndex=workItemsCount;
+        
     }
+    
     currentIndex--;
     loadGalleryItem(currentIndex);
 });
 nextButton.addEventListener('click', e =>{
     if(currentIndex+1 == workItemsCount){
-        return;
+        currentIndex=-1;
     }
     currentIndex++;
     loadGalleryItem(currentIndex);
