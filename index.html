@@ -13,6 +13,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&family=Work+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   </head>
 <body>
     <div class="main-container">
@@ -67,14 +69,14 @@
           </div>
         </section>
         <!-- INTRO -->
-        <section class="intro">
+        <section class="intro"  data-aos="flip-down" data-aos-duration="1000">
           <h2>THIS IS <br>ROCKET LEAGUE</h2>
           <p>WELCOME TO THE HIGH-POWERED HYBRID OF ARCADE-STYLE SOCCER AND VEHICULAR MAYHEM! <br> CUSTOMIZE YOUR CAR, HIT THE FIELD, AND COMPETE IN ONE OF THE MOST CRITICALLY ACCLAIMED SPORTS GAMES OF ALL TIME!</p>
         </section>
         <!-- 
           WORK
          -->
-         <section id="work">
+         <section id="work" data-aos="fade-down" data-aos-duration="2000">
           <h2>TOP CARS</h2>
           <div class="grid work">
             <!-- ITEM -->
@@ -181,7 +183,8 @@
          <!-- 
           ABOUT
          -->
-         <section class="about" id="about">
+         <section class="about" id="about" data-aos="fade-up"
+         data-aos-duration="3000">
             <h2>ABOUT</h2>
             <div class="columns">
               <div>
@@ -212,7 +215,7 @@
             <div class="contact-container">
               <h2>Contact me</h2>
                
-              <div class="columns">
+              <div class="columns" data-aos="fade-down" data-aos-duration="1500">
                 <div class="location">
                   <h3>Contact</h3>
                   Rubencardoza611@gmail.com <br>
@@ -462,5 +465,9 @@
     
     <!-- script -->
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
